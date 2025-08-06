@@ -16,8 +16,8 @@ TELEGRAM_CHANNEL_ID = '2623740817'  # or use channel ID
 def send_telegram_message(message):
     url = f'https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage'
     payload = {
-        'chat_id': TELEGRAM_CHANNEL_ID,
-        'text': message
+        'chat_id': '-1002623740817' ,
+        'text': message 
     }
     requests.post(url, json=payload)
 
@@ -42,5 +42,6 @@ if __name__ == "__main__":
     log_warning("This is a warning message.")
     log_error("This is an error message.")
     log_debug("This is a debug message.")
+
 
 
