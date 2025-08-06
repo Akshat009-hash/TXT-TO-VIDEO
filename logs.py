@@ -11,7 +11,7 @@ logging.basicConfig(
 
 # Telegram Bot Token and Channel ID
 TELEGRAM_BOT_TOKEN = '8127956088:AAFxffMamwVs8O3AW2k_yHbedy3rvJK8whQ'
-TELEGRAM_CHANNEL_ID = '1002623740817'  # or use channel ID
+TELEGRAM_CHANNEL_ID = '-1002623740817'  # or use channel ID
 
 def send_telegram_message(message):
     url = f'https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage'
@@ -42,3 +42,4 @@ if __name__ == "__main__":
     log_warning("This is a warning message.")
     log_error("This is an error message.")
     log_debug("This is a debug message.")
+
